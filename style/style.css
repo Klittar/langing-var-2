@@ -1,0 +1,1078 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', regular;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+
+
+.form-input._error {
+    box-shadow: 0 0 15px red;
+}
+
+.header-nav {
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+    background-color: #FFFFFF;
+    max-width: 1350px;
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+}
+
+
+
+.nav-big {
+    gap: 80px;
+}
+
+
+.nav-item {
+    margin: auto;
+    color: #1C1C1C;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo-min img {
+    width: 370px;
+}
+
+
+.head-content{
+
+    color: black;
+    position: relative;
+}
+
+
+.header-title {
+    border-radius: 10px;
+    background: radial-gradient(101.72% 100.68% at 50% 50%, #FFF 0%, rgba(217, 217, 217, 0.4) 100%);
+    padding: 37px;
+    width: 726px;
+    height: 300px;
+    font-size: 47px;
+    font-weight: 560;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    margin: 155px 0;
+}
+
+
+
+.header-subtitle {
+    width: 100%;
+    line-height: 120%;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 48px;
+}
+
+.header-btn {
+    display: flex;
+}
+
+.header-button {
+
+    text-decoration: none;
+    margin: 24px 0;
+    font-size: 16px;
+    color: #ececec;
+    background-color: #217A7B;
+    padding: 0 10px;
+    border: #217A7B;
+    max-width: 351px;
+    border-radius: 8px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.wrapper {
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 964px;
+    order: 2;
+    height: 500px;
+}
+
+.slider-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    height: auto;
+    width: auto;
+    transition: .2s;
+}
+
+.slider-item {
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper {
+    /*width: 800px;*/
+    /*height: 562px;*/
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider-buttons {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+/*ВТОРОЙ БЛОК ПОРТФОЛИО "НАШИ РАБОТЫ"*/
+
+.porfoli-container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    display: block;
+
+
+}
+
+.content-title {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.porfolio-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+
+.porfolio-down {
+
+    width: 1515px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 23px;
+}
+
+.cart-p1 {
+    background: url(../img/portfolio-cart6.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 670px;
+    width: 580px;
+    color: #ECECEC;
+    border-radius: 20px;
+    margin: 50px 15px 15px 15px;
+    position: relative; /* Добавляем позиционирование */
+
+
+}
+
+.cart-p1-subtitle {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-cart {
+    border-radius: 20px;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.5);
+    box-shadow: 0 0 10px rgba(57, 57, 57, 0.3);
+
+    transition: .5s ease;
+    opacity: 0; /* Устанавливаем начальную прозрачность 0 (скрыто) */
+    position: absolute; /* Добавляем позиционирование */
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    word-wrap: break-word;
+
+    flex-direction: column;
+
+    display: flex;
+
+    align-items: center;
+    pointer-events: none; /* Исключаем взаимодействие с содержимым */
+}
+
+.info-text {
+    line-height: 180%;
+    border-radius: 20px 20px 0 0;
+    background: rgba(33, 122, 123, 0.90);
+    /*width: 361px;*/
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+.info-text-title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.galer {
+    width: 300px;
+}
+
+.cart-p1:hover .info-cart {
+    opacity: 1; /* При наведении курсора делаем информацию видимой */
+}
+
+
+.cart-p2 {
+    background: url(../img/portfolio-cart2-2.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 670px;
+    width: 580px;
+    color: #ECECEC;
+    border-radius: 20px;
+    margin: 50px 15px 15px 15px;
+    position: relative; /* Добавляем позиционирование */
+}
+
+.cart-p2:hover .info-cart {
+    opacity: 1; /* При наведении курсора делаем информацию видимой */
+}
+
+.cart-p3:hover .info-cart {
+    opacity: 1; /* При наведении курсора делаем информацию видимой */
+}
+
+.cart-p4:hover .info-cart {
+    opacity: 1; /* При наведении курсора делаем информацию видимой */
+}
+
+.cart-p5:hover .info-cart {
+    opacity: 1; /* При наведении курсора делаем информацию видимой */
+}
+
+.cart-p6:hover .info-cart {
+    opacity: 1; /* При наведении курсора делаем информацию видимой */
+}
+
+.cart-p3 {
+    background: url(../img/portfolio-cart3-3.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 670px;
+    width: 580px;
+    color: #ECECEC;
+    border-radius: 20px;
+    margin: 50px 15px 15px 15px;
+    position: relative; /* Добавляем позиционирование */
+}
+
+.cart-p4 {
+    background: url(../img/portfolio-cart4.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 580px;
+    color: #ECECEC;
+    border-radius: 40px;
+    margin: 15px 15px 15px 15px;
+    position: relative; /* Добавляем позиционирование */
+}
+
+.cart-p5 {
+    background: url(../img/portfolio-cart5.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 580px;
+    color: #ECECEC;
+    border-radius: 40px;
+    margin: 15px 15px 15px 15px;
+    position: relative; /* Добавляем позиционирование */
+}
+
+.cart-p6 {
+    background: url(../img/portfolio-cart6.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 580px;
+    color: #ECECEC;
+    border-radius: 40px;
+    margin: 15px 15px 15px 15px;
+    position: relative; /* Добавляем позиционирование */
+}
+
+
+.conditions {
+    margin: 50px 60px;
+}
+
+.conditions-content {
+    display: flex;
+    margin-left: 148px;
+}
+
+.conditions-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.conditions-button {
+    
+    text-decoration: none;
+    
+    font-size: 16px;
+    color: #ececec;
+    background-color: #217A7B;
+    padding: 16px;
+    border: #217A7B;
+    max-width: 351px;
+    border-radius: 8px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+
+.conditions-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 100px;
+    line-height: normal;
+}
+
+
+
+.deadlines {
+    display: flex;
+    flex-direction: row; /* Изменение направления flex-контейнера */
+    align-items: center; /* Выравнивание по центру по вертикали */
+
+}
+
+.deadlines-img1 {
+    background: url(../img/deadlines.svg) no-repeat;
+    background-size: contain;
+    width: 62px;
+    height: 62px;
+    margin-top: -50px;
+    margin-right: 10px;
+}
+
+.deadlines-img2 {
+    background: url(../img/car.svg) no-repeat;
+    background-size: contain;
+    width: 88px;
+    height: 88px;
+    margin-top: -13px;
+    margin-right: 10px;
+}
+
+.deadlines-img3 {
+    background: url(../img/guarantee.svg) no-repeat;
+    background-size: contain;
+    width: 82px;
+    height: 82px;
+    margin-top: -37px;
+    margin-right: 10px;
+/
+}
+
+
+.deadlines-text {
+    width: 300px;
+    height: 118px;
+
+}
+
+.deadlines-title {
+
+    flex-shrink: 0;
+    color: rgba(33, 122, 123, 0.60);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    top: 0;
+    right: 0;
+}
+
+.process {
+    background-color: rgb(245, 244, 244, 1);
+}
+
+.process-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    display: block;
+}
+
+.process-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.process-title {
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+    color: #393939;
+}
+
+.process-img-alt {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 60px;
+}
+
+
+.process-pravo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.process-h2 {
+    border-bottom: 1px solid #217A7B;
+    padding-bottom: 8px; /* Добавлена линия после заголовка и отступ */
+    font-size: 14px;;
+    color: #393939;;
+}
+
+.process-ol ol {
+    padding-top: 26px;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.item {
+    color: #217A7B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    padding-bottom: 6px;
+    text-align: left;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #217A7B; /* Добавлена линия после каждого пункта */
+}
+
+.text-process {
+    flex: 1;
+    /*width: 900px;*/
+    margin: 0;
+}
+
+
+
+.description {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: none;
+    text-transform: none;
+}
+
+
+.active .description {
+    display: block;
+}
+
+
+.kp-container {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+
+    justify-content: space-between;;
+}
+
+
+.kp-text {
+    width: 500px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ind-span-kp {
+    color: #217A7B;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.kp-img-kp {
+    background: url(../img/kp-img-kp.png) 100% 100% no-repeat;
+    background-size: cover;
+    height: 370px;
+    width: 517px;
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.kp-img-kp::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    height: 370px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Темный цвет с прозрачностью */
+}
+
+
+
+.kp-img-kp button {
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    border-bottom: 0.5px solid white;
+    width: 390px;
+}
+
+
+
+.kp-pravo {
+    padding: 34px 60px 50px;
+}
+
+
+
+
+.kp-alena {
+    background: url(../img/kp-alena.jpg) center center no-repeat;
+    background-size: cover;
+    height: 667px;
+    width: 588px;
+    margin-left: 27px;
+    margin-top: -49px;
+    border-radius: 10px;
+    background-position: center;
+}
+
+
+.form-container {
+    display: flex;
+    /*padding: 140px 0;*/
+    justify-content: center;
+}
+
+.conditions-btn button {
+    background: url(../img/kp-alena.jpg) center center no-repeat;
+    background-size: cover;
+    width:  667px;
+    background: none;
+    border: none;
+}
+
+.form-button {
+    background: url(../img/form.svg) center center no-repeat;
+    background-size: cover;
+    width:  667px;
+
+    text-decoration: none;
+    
+    font-size: 22px;
+    color: #ececec;
+    font-weight: 200;
+    text-transform: none;
+    text-align: center;
+}
+
+
+.form-content {
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    margin-left: 20px;
+
+
+}
+
+.form-title {
+    color: #393939;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 6px;
+}
+
+.form-pole {
+    color: #393939;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.form-pole input {
+    font-size: 16px;
+    border-radius: 40px;
+    border: 1px solid #217A7B;
+    width: 431px;
+    height: 42px;
+    padding: 11px 137px 11px 16px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+
+/* Add a new class for image */
+.image-left {
+    display: flex;
+    background: url(../img/form-img1.jpg) no-repeat;
+    height: 470px;
+    width: 591px;
+    align-self: center;
+    background-position: center;
+    padding-top: 10px;
+    justify-content: flex-start;
+    border-radius: 10px;
+    /*margin-right: 20px; /* Adjust this value as per your need */
+}
+
+.form-button {
+    display: flex;
+    justify-content: center; /* или 'flex-start' если хотите их выровнять по левому краю */
+    align-items: center; /* выровнять элементы по вертикали */
+}
+
+
+.custom-file {
+    display: block;
+    margin: 10px;
+}
+
+
+.form-button button {
+    text-align: center;
+    border-radius: 40px;
+    border: 0;
+    background: #217A7B;
+
+    width: 200px;
+    height: 48px;
+
+    display: block;
+    margin: 0 auto;
+
+    color: #ECECEC;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /*    text-transform: uppercase;*/
+
+    padding: 16px 16px;
+    justify-content: flex-end;
+}
+
+.custom-file-input {
+    display: none;
+
+}
+
+.custom-file-label {
+    color: #393939;
+
+    padding: 16px 36px;
+    color: #ececec;
+    background: #217A7B;
+
+    border-radius: 40px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+.about-section {
+    background-color: rgb(245, 244, 244, 1);
+    padding-bottom: 150px;
+
+}
+
+
+
+.about-content {
+    display: flex;
+    margin: 20px 60px;
+}
+
+.content-title-about {
+    text-align: center;
+    padding-top: 90px;
+    margin-left: 60px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-textp1 {
+    max-width: 540px;
+    height: 200px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    margin-top: 150px;
+    z-index: 2;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: rgba(245,245,245,0.8);
+}
+
+.about-textp1-span {
+    color: #217A7B;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-photo {
+    background: url(../img/jim-wood.jpg) no-repeat;
+    background-size: cover;
+    width: 1085px;
+    height: 713px;
+    border-radius: 10px 0 0 10px;
+    /* margin-top: 50px;*/
+    position: absolute;
+    right: 0;
+    background-position: center;
+
+    z-index: 0;
+}
+
+
+
+
+.about-textp2 {
+    padding: 30px;
+    max-width: 540px;
+
+    margin-top: 400px;
+    margin-left: -144px;
+    background-color: rgba(33, 122, 123, 0.9);
+    border-radius: 10px;
+    position: relative;
+    line-height: 155%;
+    color: white;
+    z-index: 1; /* Второй блок текста будет отображаться поверх фотографии */
+    /* Добавьте свои предпочитаемые стили */
+}
+
+
+footer {
+    background-color: rgb(245, 244, 244, 1);
+    height: 580px;
+    width: 100%;
+}
+
+
+.ft-container,
+.ft-container-niz {
+    display: flex;
+    /*margin: 0 226px;*/
+    justify-content: space-between;
+    /*width: 1213px;*/
+    height: auto;
+}
+
+.aderss {
+    width: 300px;
+}
+
+.aderss a {
+    text-decoration: none;
+}
+
+.aderss p{
+    color: #393939;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-align: left;
+    gap: 20px;
+}
+
+
+.footer-title, h3 {
+    color: #000;
+    margin: 0;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer-logo {
+    background: url(../img/mr-jimwood.svg) no-repeat;
+    background-size: cover;
+    width: 376px;
+    height: 146px;
+    position: absolute;
+}
+
+.ft-devize {
+    width: 580px;
+    color: #1C1C1C;
+    padding-top: 30px;
+    padding-left: 434px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: none;
+}
+
+
+.btn-up {
+
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 157px;
+    height: 35px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.btn-up a {
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+/*галерея */
+
+.row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: radial-gradient(101.72% 100.68% at 50% 50%, #292525 0%, rgba(27, 26, 26, 0.4) 100%);
+  }
+
+  .portfolio-img {
+    width: 400px; object-fit: cover;
+  }
+  .portfolio-img-big {
+    object-fit: cover; height: 830px; width: 1200px;
+}
+
+.portfolio-img-min img {
+    object-fit: cover;
+    height: 600px; width: 600px;
+}
+  
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+    object-fit: cover;
+  }
+
+
+.card-content img {
+    width: 100%;
+    height: 590px;
+}
+
+
+
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    width: 1492px;
+    display: none;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
